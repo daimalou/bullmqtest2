@@ -26,6 +26,8 @@ export class AppService {
       //@ts-ignore
       const jobs2 = await this.audioQueue.addBulk(newimages);
       console.log('jobs2', jobs2);
-    } catch (error) {}
+    } catch (error) {
+      console.log('error', 'error');
+    }
   }
 }

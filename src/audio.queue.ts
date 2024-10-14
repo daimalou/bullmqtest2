@@ -9,6 +9,6 @@ export function delay(ms: number) {
 export class AudioConsumer extends WorkerHost {
   async process(job: Job<any>): Promise<void> {
     await delay(5);
-    console.log('Audio Done!');
+    console.log('Audio Done!', job.data);
   }
 }
